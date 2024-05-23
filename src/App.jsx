@@ -84,7 +84,7 @@ const App = () => {
                 setText(e.target.value);
               }}
             ></textarea>
-            <button onClick={copyText}>Copy text</button>
+            <button onClick={copyText} className="border-2 border-zinc-900 rounded-md bg-zinc-500 hover:bg-zinc-800 ">Copy text</button>
           </div>
           <div className=" m-3">
             <h1>Translated Text</h1>
@@ -98,7 +98,7 @@ const App = () => {
               value={translatedText}
               className="w-[50vw] h-[30vh] border-2 border-gray-300 p-2 rounded-md"
             ></textarea>
-            <button onClick={copyTranslatedText}>Copy text</button>
+            <button onClick={copyTranslatedText} className="border-2 border-zinc-900 rounded-md bg-zinc-500 hover:bg-zinc-800 ">Copy text</button>
             <div className="flex justify-center mt-3">
               <form onSubmit={translate}>
                 <button
